@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Segoe UI,sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#2193b0,#6dd5ed);
+}
+
+.container{
+width:380px;
+padding:35px;
+background:rgba(255,255,255,0.15);
+backdrop-filter:blur(12px);
+border-radius:20px;
+box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+text-align:center;
+color:white;
+margin-bottom:25px;
+}
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+outline:none;
+}
+
+button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:white;
+color:#2193b0;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+transform:scale(1.03);
+}
+
+.link{
+text-align:center;
+margin-top:15px;
+color:white;
+}
+
+.link a{
+color:white;
+font-weight:bold;
+text-decoration:none;
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h2>🔐 Login</h2>
+
+<form action="/check" method="post">
+
+<input type="email"
+name="email"
+placeholder="📧 Enter Email"
+required>
+
+<input type="password"
+name="password"
+placeholder="🔒 Enter Password"
+required>
+
+<button type="submit">Login</button>
+
+</form>
+
+<div class="link">
+Don't have an account?
+<a href="/">Register</a>
+</div>
+
+</div>
+
+</body>
+</html>

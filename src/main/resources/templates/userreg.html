@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Registration</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#2193b0,#6dd5ed);
+}
+
+.container{
+    width:400px;
+    padding:35px;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.2);
+}
+
+h2{
+    text-align:center;
+    color:white;
+    margin-bottom:25px;
+    font-size:30px;
+}
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box input{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    font-size:15px;
+}
+
+.input-box input:focus{
+    box-shadow:0 0 10px rgba(255,255,255,0.8);
+}
+
+button{
+    width:100%;
+    padding:13px;
+    border:none;
+    border-radius:10px;
+    background:white;
+    color:#2193b0;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#f1f1f1;
+    transform:translateY(-2px);
+}
+
+.login-link{
+    text-align:center;
+    margin-top:18px;
+    color:white;
+}
+
+.login-link a{
+    color:white;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.login-link a:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2>🚀 Sign Up</h2>
+
+    <form action="/register" method="post">
+
+        <div class="input-box">
+            <input type="text" name="name" placeholder="👤 Full Name" required>
+        </div>
+
+        <div class="input-box">
+            <input type="number" name="age" placeholder="🎂 Age" required>
+        </div>
+
+        <div class="input-box">
+            <input type="email" name="email" placeholder="📧 Email Address" required>
+        </div>
+
+        <div class="input-box">
+            <input type="password" name="password" placeholder="🔒 Password" required>
+        </div>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <div class="login-link">
+        Already have an account?
+        <a href="/login">Login</a>
+    </div>
+
+</div>
+
+</body>
+</html>
